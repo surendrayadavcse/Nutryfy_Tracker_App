@@ -36,7 +36,7 @@ export default function Login()
         event.preventDefault();
         console.log(userCreds);
 
-        fetch("http://localhost:8000/login",{
+        fetch("https://nutryfy-tracker-app.onrender.com/login",{
             method:"POST",
             body:JSON.stringify(userCreds),
             headers:{

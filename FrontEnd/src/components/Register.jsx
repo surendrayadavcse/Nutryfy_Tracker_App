@@ -34,7 +34,7 @@ export default function Register()
             event.preventDefault();
             // console.log(userDetails);
 
-            fetch("http://localhost:8000/register",{
+            fetch("https://nutryfy-tracker-app.onrender.com/register",{
                 method:"POST",
                 body:JSON.stringify(userDetails),
                 headers:{

@@ -18,7 +18,7 @@ export default function Track()
         if(event.target.value.length!==0)
         {
 
-         fetch(`http://localhost:8000/foods/${event.target.value}`,{
+         fetch(`https://nutryfy-tracker-app.onrender.com/foods/${event.target.value}`,{
                 method:"GET",
                 headers:{
                     "Authorization":`Bearer ${loggedData.loggedUser.token}`
